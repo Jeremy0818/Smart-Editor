@@ -29,7 +29,7 @@ Included Files:
 
 Running Instructions:
     Before running program, you can create your own words text file and training text file.
-        1. Run "make random" to create the random text file (can be momdified and use different text file but four text files are provided)
+        1. Run "make random" to create the random text file (can be modified and use different text file but four text files are provided)
         2. Put as much text in the training text file as possible but make sure there is a space between every two word and also after the last word (otherwise the program will stuck in an infinity loop waiting for another space)
 
     To start the program:
@@ -44,7 +44,7 @@ Running Instructions:
         3. predict next word
             (i) When there is a predicted word, it will display in green. Press tab to get the predicted word.
         4. switching
-            (i) When the user type an invalid word and press space, the program will try to get a list of similar words and replace the invalid word. If there is no similar word that have a levenshtein distance less than or equal to 3, then no option is provided, else the user can use the tilde button to switch between the words in the list.
+            (i) When the user type an invalid word and press space, the program will try to get a list of similar words and replace the invalid word. If there is no similar word that have a Levenshtein distance less than or equal to 3, then no option is provided, else the user can use the tilde button to switch between the words in the list.
         Note: 
         * Do not use arrow key in this program.
         * Blue and green color words are just options to complete the text, ignore them if the user does not want to use the word suggested. The cursor might seems a little weird when suggestion provided.
@@ -56,7 +56,7 @@ Notes and Assumptions:
 
     * The key length for the Markov chain is two string as one string by adding a space in between to be the key in the unordered map with a value of heap data structure so that it can get the most frequent word appear next of the two string. We choose two word as a key is because it is less accuracy using one word, and too difficult to predict the next word with three words as a key.
 
-    * The program set a maximum levenshtein distance of value 3 to get the list of similar words so that it is more accurate for the user and prevent providing too many options to the user. This maximum value can be changed for the user to get more options or less options.
+    * The program set a maximum Levenshtein distance of value 3 to get the list of similar words so that it is more accurate for the user and prevent providing too many options to the user. This maximum value can be changed for the user to get more options or less options.
 
     * We have a text file with all the words in a random order. This is to make both the ternary search tree and trie as much balanced as possible so that when we try to insert or find a word, the running time can be approximately to log(n). Moreover, we have words with higher frequency at the top. This can make the autoCompletion() in tenary_tree.cpp more reliable since we just find a word by going straight to mid child until getting the first one when it finds the current node and it would be easier to get a word which is inserted early.
 
