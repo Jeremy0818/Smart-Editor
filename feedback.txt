@@ -1,0 +1,28 @@
+Jeremy Choo
+Siyuan Liu
+
+Readme (20): 20
+  - Running Instructions good
+  - Assumptions good
+  - Desktop Makefile good
+  
+Modularity and Design (30):27
+  - file structure good, though Editor.cpp a little monolithic
+  - could potentially use some more data structures in implementation of text editor
+  - function organization good
+  - code dry
+  - clarity generally good
+
+Challenge (30):30
+  - levenstein distance, ternary tree, trie, markov chain
+
+Style (20): 20
+  - documentation good
+  - useful comments
+  - naming readable
+  - headers present
+
+code: 97/100
+demo: 48/55
+
+total: 92/100
