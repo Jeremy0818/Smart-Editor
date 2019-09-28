@@ -81,3 +81,4 @@ To improve in the future:
     1. Markov chain updating in a faster way
     2. Trie can be more space efficient
     3. Ternary tree can use Breath first search to get the nearest word
+    4. Implement in a better interface
